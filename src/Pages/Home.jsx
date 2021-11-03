@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Login from "../Component/Login";
 import "../Css/home.css";
 
