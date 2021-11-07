@@ -1,48 +1,77 @@
-import React from "react";
-import Button from "@material-ui/core/Button"
+import React, { useContext, useEffect, useState } from "react";
+import Button from "@material-ui/core/Button";
+import ErroCenterContext from "../Context/ErroCenterContext";
 import { FormControl, TextField } from "@material-ui/core";
-import { Box } from "@material-ui/system";
-import { Link } from "react-router-dom";
-
-import axiosApi from "../axiosApi";
-
+import { Redirect } from "react-router-dom";
+import users from "../mockrequest/users.json"
 import "../Css/login.css";
 
 const Login = () => {
-  const handleLogin = () => {
-    const email = "johnealves@gmail.com"
-    const password = "123456"
-    console.log("login")
-    axiosApi.get("/user/3")
-      .then(resp => console.log(resp))
-      .catch(err => console.log(err))
-    axiosApi.post("/oauth/token", {
-      headers: {
-        "Content-type": "application/x-wwww-form-urlencoded;charset=UTF-8",
-        "Access-Control-Allow-Origin": "*"
-      },
-      body: `grant_type=password&username=${email}&password=${password}`+
-        `client_id=admin&client_secret=admin`
-    }).then(resp => console.log(resp)).catch(err => console.log(err))
+  const [loginData, setLoginData] = useState({
+    email: "",
+    password: "",
+  })
+  const [redirect, setRedirect] = useState(false)
+  const { conected, setConected } = useContext(ErroCenterContext)
+
+  useEffect(() => {
+    setRedirect(conected)
+  }, [conected])
+
+
+  const handleLoginData = ({ target: { name, value } }) => {
+    setLoginData({ 
+      ...loginData,
+      [`${name}`]: value }
+    )
   }
 
+  const verifyLogin = (email, password) => {
+    let authorized = false;
+    users.forEach((user) => {
+      if (email === user.email && password === user.password) {
+        authorized = true;
+      }
+    })
+
+    return authorized
+  }
+
+  const getToken = async () => {
+    const { email, password } = loginData;
+    if (email === "" || password === "") {
+      alert("Preencha email e senha para se conectar")
+      return null;
+    }
+    const authorized = verifyLogin(email, password)
+    if (authorized) {
+      setConected(true)
+    } else {
+      alert("Email ou senha incorreto!")
+    }
+  };
+
+  if (redirect) {
+   return <Redirect to="dashboard"/>
+  }
+  
   return (
     <FormControl component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '25ch' }, }}>
       <TextField
-        id="outlined-basic"
-        name="userEmail"
+        name="email"
         label="Email"
         type="email"
         variant="outlined"
+        onInput={ handleLoginData }
       />
       <TextField
-        id="outlined-basic"
-        name="userPassword"
+        name="password"
         label="Senha"
         type="password"
         variant="outlined"
+        onInput={ handleLoginData }
       />
-      <Button style={{ backgroundColor: "#ed1940", }} variant="contained" onClick={ handleLogin }>
+      <Button style={{ backgroundColor: "#ed1940", }} variant="contained" onClick={ getToken }>
         Entrar
       </Button>
     </FormControl>

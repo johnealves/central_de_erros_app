@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Adriano Forcellini",
+    "email": "adrianoforcellinipedretti@gmail.com",
+    "password": "123456",
+    "createdAt": [2021, 11, 5, 19, 36, 17, 131000000]
+  },
+  {
+    "id": 2,
+    "name": "Layo Kaminski",
+    "email": "layokaminski@gmail.com",
+    "password": "123456",
+    "createdAt": [2021, 11, 5, 19, 36, 17, 189000000]
+  },
+  {
+    "id": 3,
+    "name": "Johne Alves",
+    "email": "johnealves@gmail.com",
+    "password": "123456",
+    "createdAt": [2021, 11, 5, 19, 36, 17, 191000000]
+  },
+  {
+    "id": 4,
+    "name": "Tiago Yoneda",
+    "email": "xyonedax@gmail.com",
+    "password": "123456",
+    "createdAt": [2021, 11, 5, 19, 36, 17, 193000000]
+  }
+]

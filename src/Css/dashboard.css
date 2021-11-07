@@ -1,0 +1,64 @@
+.dashboard-container hr {
+  /* color: #20BEC6; */
+  /* background-color: #20BEC6; */
+  border: 2px solid #20BEC6;
+  width: 95%;
+}
+
+.dashboard-container section {
+  display: flex;
+}
+
+.header-dash {
+  background-color: tomato;
+  text-align: center;
+}
+
+.aside-container {
+  background-color: #ED1941;
+  height: 89vh;
+  width: 200px;
+}
+
+.error-list-container {
+  margin: 1rem;
+  width: 100%;
+}
+
+.error-list-container .MuiDataGrid-root.MuiDataGrid-root {
+  max-height: 80%;
+}
+
+.error-list-container h1 {
+  color: #fff;
+  background-color: #ED1941;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.MuiDataGrid-cellCheckbox.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell--textCenter,
+.MuiDataGrid-columnHeader--alignCenter.MuiDataGrid-columnHeader.MuiDataGrid-columnHeaderCheckbox {
+  display: none;
+}
+
+.graphics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+  text-align: center;
+}
+
+.graphics-container section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.graphics-container h3 {
+  background-color: #ED1941;
+  color: #fff;
+  padding: 10px;
+  margin: 1rem;
+  width: 400px
+}

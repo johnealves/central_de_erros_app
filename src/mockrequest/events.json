@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "level": "error",
+    "description": "This is an exception that is thrown whenever a reference is made to a non-existent ACL (Access Control List).",
+    "origem": "server.com.br",
+    "createdAt": "2021-11-05T20:53:42.652",
+    "quantity": "3"
+  },
+  {
+    "id": 2,
+    "level": "error",
+    "description": "Thrown when an invalid MBean attribute is passed to a query constructing method. This exception is used internally by JMX during the evaluation of a query. User code does not usually see it.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.605",
+    "quantity": "15"
+  },
+  {
+    "id": 3,
+    "level": "error",
+    "description": "An AlreadyBoundException is thrown if an attempt is made to bind an object in the registry to a name that already has an associated binding.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.608",
+    "quantity": "7"
+  },
+  {
+    "id": 4,
+    "level": "error",
+    "description": "This class is used for reporting application level exceptions between ORBs and stubs.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.61",
+    "quantity": "13"
+  },
+  {
+    "id": 5,
+    "level": "error",
+    "description": "Thrown to indicate that a preferences operation could not complete because of a failure in the backing store, or a failure to contact the backing store.",
+    "origem": "127.0.0.1",
+    "createdAt": "2021-11-05T20:53:42.613",
+    "quantity": "31"
+  },
+  {
+    "id": 6,
+    "level": "error",
+    "description": "Signals that an Abstract Window Toolkit exception has occurred.",
+    "origem": "server.com.br",
+    "createdAt": "2021-11-05T20:53:42.616",
+    "quantity": "8"
+  },
+  {
+    "id": 7,
+    "level": "error",
+    "description": "Thrown to indicate that a preferences operation could not complete because of a failure in the backing store, or a failure to contact the backing store.",
+    "origem": "127.0.0.1",
+    "createdAt": "2021-11-05T20:53:42.619",
+    "quantity": "19"
+  },
+  {
+    "id": 8,
+    "level": "error",
+    "description": "General exception used by the activation interfaces.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.622",
+    "quantity": "13"
+  },
+  {
+    "id": 9,
+    "level": "error",
+    "description": "Thrown when an invalid MBean attribute is passed to a query constructing method. This exception is used internally by JMX during the evaluation of a query. User code does not usually see it",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.624",
+    "quantity": "11"
+  },
+  {
+    "id": 10,
+    "level": "error",
+    "description": "Thrown when an invalid expression is passed to a method for constructing a query. This exception is used internally by JMX during the evaluation of a query. User code does not usually see it.\n",
+    "origem": "server.com.br",
+    "createdAt": "2021-11-05T20:53:42.626",
+    "quantity": "3"
+  },
+  {
+    "id": 11,
+    "level": "error",
+    "description": "This exception is to report bad locations within a document model (that is, attempts to reference a location that doesn't exist).",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.628",
+    "quantity": "3"
+  },
+  {
+    "id": 12,
+    "level": "error",
+    "description": "Thrown when an invalid string operation is passed to a method for constructing a query.",
+    "origem": "server.com.br",
+    "createdAt": "2021-11-05T20:53:42.63",
+    "quantity": "7"
+  },
+  {
+    "id": 13,
+    "level": "error",
+    "description": "Exception thrown when a thread tries to wait upon a barrier that is in a broken state, or which enters the broken state while the thread is waiting.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.632",
+    "quantity": "9"
+  },
+  {
+    "id": 14,
+    "level": "error",
+    "description": "This exception indicates one of a variety of certificate problems.",
+    "origem": "127.0.0.1",
+    "createdAt": "2021-11-05T20:53:42.634",
+    "quantity": "30"
+  },
+  {
+    "id": 15,
+    "level": "error",
+    "description": "Thrown to indicate that the clone method in class Object has been called to clone an object, but that the object's class does not implement the Cloneable interface.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.636",
+    "quantity": "11"
+  },
+  {
+    "id": 16,
+    "level": "error",
+    "description": "Signals that a data format error has occurred.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.638",
+    "quantity": "3"
+  },
+  {
+    "id": 17,
+    "level": "error",
+    "description": "Indicates a serious configuration error.",
+    "origem": "server.com.br",
+    "createdAt": "2021-11-05T20:53:42.64",
+    "quantity": "7"
+  },
+  {
+    "id": 18,
+    "level": "error",
+    "description": "This exception is thrown by credentials implementing the Destroyable interface when the destroy method fails.",
+    "origem": "127.0.0.1",
+    "createdAt": "2021-11-05T20:53:42.642",
+    "quantity": "22"
+  },
+  {
+    "id": 19,
+    "level": "error",
+    "description": "Exception used to stop and expand/collapse from happening. See How to Write a Tree-Will-Expand Listener in The Java Tutorial for further information and examples.",
+    "origem": "127.0.0.1",
+    "createdAt": "2021-11-05T20:53:42.644",
+    "quantity": "26"
+  },
+  {
+    "id": 20,
+    "level": "error",
+    "description": "Thrown by method createFont in the Font class to indicate that the specified font is bad.",
+    "origem": "Application",
+    "createdAt": "2021-11-05T20:53:42.646",
+    "quantity": "17"
+  }
+]
