@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
 import ErroCenterContext from "../Context/ErroCenterContext";
-import { FormControl, TextField } from "@material-ui/core";
+import { Alert, FormControl, TextareaAutosize, TextField } from "@material-ui/core";
 import { Redirect } from "react-router-dom";
 import users from "../mockrequest/users.json"
 import "../Css/login.css";
@@ -47,7 +47,8 @@ const Login = () => {
     if (authorized) {
       setConected(true)
     } else {
-      alert("Email ou senha incorreto!")
+      <Alert severity="error">Email ou senha incorreto!"</Alert>
+      // alert("Email ou senha incorreto!")
     }
   };
 
@@ -62,14 +63,9 @@ const Login = () => {
         label="Email"
         type="email"
         variant="outlined"
-        onInput={ handleLoginData }
       />
-      <TextField
-        name="password"
-        label="Senha"
-        type="password"
-        variant="outlined"
-        onInput={ handleLoginData }
+      <TextareaAutosize
+        minRows={3}
       />
       <Button style={{ backgroundColor: "#ed1940", }} variant="contained" onClick={ getToken }>
         Entrar

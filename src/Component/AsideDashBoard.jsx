@@ -37,10 +37,10 @@ const AsideDashboard = () => {
             <ListItemButton 
               sx={{ bgcolor: "#ED1941" }}
               selected={selectedIndex === 1}
-              onClick={(event) => handleListItemClick("user", 1)}
+              onClick={(event) => handleListItemClick("form", 1)}
             >
               {/* <ListItemIcon><InboxIcon/></ListItemIcon> */}
-              <ListItemText primary="Minha conta" />
+              <ListItemText primary="Novo registro" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>

@@ -5,6 +5,7 @@ import ErrorList from "../Component/ErrorList";
 import MainHeader from "../Component/MainHeader";
 import "../Css/dashboard.css";
 import Infografics from "../Component/infographics";
+import FormNewRegister from "../Component/FormNewRegister";
 
 const Dashboard = () => {
   const { renderDash } = useContext(ErrorCenterContext);
@@ -23,6 +24,7 @@ const Dashboard = () => {
           <AsideDashboard />
         </div>
         { (renderDash === "error-list") && <ErrorList /> }
+        { (renderDash === "form") && <FormNewRegister /> }
         { (renderDash === "graphics") && <Infografics /> }
       </section>
     </div>
